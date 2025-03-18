@@ -14,7 +14,6 @@
                 <div class="logo">IK</div>
                 <ul class="nav-links">
                     <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#experience">Experience</a></li>
                     <li><a href="index.html#projects">Projects</a></li>
                     <li><a href="index.html#publications">Publications</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
@@ -24,7 +23,7 @@
     </header>
 
     <!-- Project Header -->
-    <section class="project-header blue">
+    <section class="project-header">
         <div class="container">
             <h1>Underwater Biomimetic Robot</h1>
             <p>A specialized tail mechanism for realistic underwater motion</p>
@@ -35,15 +34,44 @@
     <section>
         <div class="container">
             <div class="project-content">
-                <img src="images/projects/dolphin_project/main.jpg" alt="Underwater Biomimetic Robot" class="project-image">
+                <img src="/api/placeholder/800/500" alt="Underwater Biomimetic Robot" class="project-image">
                 
                 <div class="project-detail">
                     <h3>Project Overview</h3>
-                    <p>I led the development of this Underwater Biomimetic Robot as a contractor project for a Turkish defense company while working at Cyprus Robotics. My design focused on creating a robotic platform that mimics the swimming patterns and maneuverability of marine animals, specifically dolphin-like creatures.</p>
+                    <p>I led the development of this Underwater Biomimetic Robot for a Turkish defense company while at Cyprus Robotics. The design mimics dolphin-like swimming patterns, focusing on a specialized tail mechanism that overcomes traditional propeller limitations in efficiency, noise, and maneuverability.</p>
                     
-                    <p>The primary focus of my work was on the specialized tail mechanism, which required detailed kinematic and dynamic analyses to optimize movement patterns and improve maneuverability. I designed this system to overcome the limitations of traditional propeller-based systems in terms of noise, efficiency, and maneuverability.</p>
+                    <div class="video-container">
+                        <!-- Placeholder for video - in a real implementation, this would be a YouTube or Vimeo embed -->
+                        <iframe src="/api/placeholder/800/450" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
                     
-                    <p>My biomimetic approach offered several advantages over traditional underwater vehicles: enhanced maneuverability with tighter turning radii, reduced acoustic signature, and improved energy efficiency that extended operational range by up to 40%. My successful prototype was showcased at the SAHA EXPO International Defence & Aerospace Exhibition in Istanbul, where it received significant interest from defense industry stakeholders.</p>
+                    <p>The prototype was successfully showcased at the SAHA EXPO International Defence & Aerospace Exhibition in Istanbul.</p>
+                    
+                    <h3>Design Process</h3>
+                    <p>The development process involved several stages of prototyping and testing:</p>
+                    
+                    <div class="gallery">
+                        <img src="/api/placeholder/400/300" alt="Tail mechanism prototype" class="gallery-img">
+                        <img src="/api/placeholder/400/300" alt="3D design model" class="gallery-img">
+                        <img src="/api/placeholder/400/300" alt="Control system development" class="gallery-img">
+                        <img src="/api/placeholder/400/300" alt="Water testing" class="gallery-img">
+                        <img src="/api/placeholder/400/300" alt="Final assembly" class="gallery-img">
+                        <img src="/api/placeholder/400/300" alt="Exhibition showcase" class="gallery-img">
+                    </div>
+                    
+                    <h3>Key Innovation Points</h3>
+                    <p>The most challenging aspects of this project were developing an efficient actuation system that could mimic the complex motion patterns of marine animals while maintaining durability in a saltwater environment. I implemented several innovative solutions:</p>
+                    
+                    <div class="features">
+                        <ul>
+                            <li>Custom-designed flexible spine mechanism with variable stiffness sections</li>
+                            <li>Waterproof servo motors with specialized corrosion-resistant coatings</li>
+                            <li>Biomimetic skin material that reduces drag while maintaining flexibility</li>
+                            <li>Compact control electronics with advanced motion algorithms</li>
+                            <li>Modular design allowing for quick field maintenance and upgrades</li>
+                        </ul>
+                    </div>
                     
                     <div class="tech-list">
                         <span class="tech-tag">Biomimetic Design</span>
@@ -51,17 +79,22 @@
                         <span class="tech-tag">Defense Applications</span>
                         <span class="tech-tag">Motion Analysis</span>
                         <span class="tech-tag">Mechanical Design</span>
+                        <span class="tech-tag">Fluid Dynamics</span>
                     </div>
                     
                     <div style="margin-top: 30px;">
-                        <a href="pdfs/underwater_robot_project.pdf" class="btn" target="_blank">View Project PDF</a>
+                        <a href="index.html#projects" class="btn">Back to Projects</a>
                     </div>
                 </div>
-                
-                <a href="index.html#projects" class="btn">Back to Projects</a>
             </div>
         </div>
     </section>
+
+    <!-- Modal for gallery images -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -70,5 +103,35 @@
             <a href="index.html" class="back-link">Back to Home</a>
         </div>
     </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImg");
+        var closeBtn = document.getElementsByClassName("close")[0];
+        
+        // Get all images with class "gallery-img"
+        var images = document.getElementsByClassName("gallery-img");
+        
+        // Add click event to all gallery images
+        for (var i = 0; i < images.length; i++) {
+            images[i].onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        }
+        
+        // Close the modal when clicking the × button
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // Close the modal when clicking outside the image
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
