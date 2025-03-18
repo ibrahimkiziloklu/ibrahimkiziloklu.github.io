@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Underwater Fish Detection and Tracking System | Ibrahim Doruk Kızıloklu</title>
     <link rel="stylesheet" href="css/portfolio-styles.css">
+    <style>
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .video-section {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -42,6 +66,14 @@
                     <p>While working at Cyprus Robotics in collaboration with Orca - Caretta Robotics, I developed an AI-based vision system for autonomous underwater vehicles. This system was designed to detect, classify, and track various fish species in real-time, even in challenging underwater environments with limited visibility.</p>
                     
                     <p>The development of this system involved implementing deep learning models based on CNN architecture specifically optimized for underwater environments. The system overcomes common challenges in underwater vision such as light scattering, color distortion, and particulate matter, providing reliable detection in various marine conditions.</p>
+                    
+                    <div class="video-section">
+                        <h3>System Demonstration</h3>
+                        <div class="video-container">
+                            <!-- Replace this with your actual video embed code -->
+                            <iframe src="/api/placeholder/800/450" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
                     
                     <p>The fish detection and species classification algorithms were designed to be computationally efficient, allowing them to run on the embedded systems of autonomous underwater vehicles with limited processing power. The system achieved over 85% accuracy in species identification even in turbid water conditions and could track multiple targets simultaneously with minimal latency.</p>
                     
