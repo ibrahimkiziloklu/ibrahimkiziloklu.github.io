@@ -1,16 +1,38 @@
 ## Hi there 👋
 
-<!--
-**ibrahimkiziloklu/ibrahimkiziloklu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Ibrahim Doruk Kızıloklu
 
-Here are some ideas to get you started:
+## 🤖 Robotics Engineer
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Hi there! I'm Ibrahim, a Robotics Engineer.
+
+### 🛠️ Skills
+
+- **Mechanical Design**: SolidWorks, CAD modeling, mechatronics integration
+- **Control Theory**: Non-linear control systems, state estimation
+- **System Modeling**: Dynamic system simulation, finite element analysis
+- **Autonomous Navigation**: Path planning, sensor fusion, SLAM
+- **Computer Vision**: Object detection, tracking, deep learning for robotics
+
+### 🔭 Current Projects
+
+- Five-Bar Parallel Arm Robot for biomedical applications
+- Exoskeleton systems for rehabilitation and sports injury recovery
+- Underwater biomimetic robotics with dolphin-inspired locomotion
+- Computer vision systems for underwater environments
+
+### 📝 Recent Publications
+
+- **[Design and Stiffness Modeling of a Novel Planar Parallel Robot with Variable Stiffness Actuators](https://link.springer.com/chapter/10.1007/978-3-031-67383-2_30)** - Springer/Mechanism Design for Robotics (2024)
+- **[A Comparative Analysis Between the Additive and the Multiplicative Extended Kalman Filter](https://arxiv.org/abs/2307.06300)** - arXiv:2307.06300
+
+### 📫 Connect With Me
+
+- 📧 Email: ibrahimkiziloklu@gmail.com
+- 📍 Location: Aalborg, Denmark
+- 💼 LinkedIn: [ibrahimdorukkiziloklu](https://www.linkedin.com/in/ibrahimdorukkiziloklu/)
+- 🌐 Portfolio: [View My Projects](https://ibrahimkiziloklu.github.io/ibrahimkiziloklu)
+
+---
+
+*I'm always open to interesting collaborations and research opportunities.
