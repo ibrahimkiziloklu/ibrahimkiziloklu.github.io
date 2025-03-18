@@ -5,6 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exoskeleton for Rehabilitation | Ibrahim Doruk Kızıloklu</title>
     <link rel="stylesheet" href="css/portfolio-styles.css">
+    <style>
+        .gallery-section {
+            margin-top: 40px;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .view-gallery {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -44,6 +93,27 @@
                     <p>Hamstring injuries are among the most common and recurrent issues in sports, particularly in activities involving sprinting and jumping. Traditional rehabilitation approaches often lack precise quantitative feedback on muscle mechanics during therapy exercises. This exoskeleton was designed to address this gap by providing accurate measurement and controlled loading capabilities.</p>
                     
                     <p>As the lead engineer at the Biomechanics Lab, I revised and upgraded the design of this lower body exoskeleton, implementing a modular ROS2-based control system with real-time data acquisition. I developed the necessary exercise patterns for rehabilitation protocols, combining principles from biomechanics, robotics, and rehabilitation science to create an effective tool for both research and clinical applications.</p>
+                    
+                    <div class="gallery-section">
+                        <h3>Project Gallery</h3>
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="/api/placeholder/400/300" alt="Exoskeleton front view">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="/api/placeholder/400/300" alt="Control system detail">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="/api/placeholder/400/300" alt="Knee joint mechanism">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="/api/placeholder/400/300" alt="Testing setup">
+                            </div>
+                        </div>
+                        <div class="view-gallery">
+                            <a href="exoskeleton-gallery.html" class="btn">View Full Gallery</a>
+                        </div>
+                    </div>
                     
                     <div class="tech-list">
                         <span class="tech-tag">Medical Robotics</span>
