@@ -6,6 +6,7 @@
 
 Hi there! I'm Ibrahim, a Robotics Engineer.
 
+
 ### 🛠️ Skills
 
 - **Mechanical Design**: SolidWorks, CAD modeling, mechatronics integration

@@ -653,7 +653,55 @@ footer {
 .delay-1 { animation-delay: 0.1s; }
 .delay-2 { animation-delay: 0.2s; }
 .delay-3 { animation-delay: 0.3s; }
+/* Contact Form Validation Styles */
+.error-text {
+    color: var(--primary);
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block;
+}
 
+.form-status.success {
+    background-color: rgba(78, 205, 196, 0.1);
+    color: var(--secondary);
+}
+
+.form-status.error {
+    background-color: rgba(255, 107, 107, 0.1);
+    color: var(--primary);
+}
+
+/* Improve form field focus states */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+}
+
+/* Validation styling */
+.form-group input.invalid,
+.form-group textarea.invalid {
+    border-color: var(--primary);
+    background-color: rgba(255, 107, 107, 0.05);
+}
+
+/* Add a loading spinner */
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+.spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spinner 0.8s linear infinite;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
